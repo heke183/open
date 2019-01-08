@@ -1,0 +1,45 @@
+#environments:
+#	dev:
+#		url: http://dev.example.com
+#		name: Developer Setup
+#	prod:
+#		url: http://another.example.com
+#		name: My Cool App
+
+#redis
+spring:
+  redis:
+    database: 0
+    port: 6379
+    password:
+    session:
+      cookie:
+        name: XLSESSIONID
+        domain: xianglin.cn
+        path: /
+        max-alive: 604800
+        prefix: GLOBAL
+        host: 222
+
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+  dubbo:
+    application:
+      name: open
+    registry:
+      check: false
+    consumer:
+      check: false
+      retries: 0
+
+
+
+shutdown:
+  user:
+    name: admin
+    password: admin
+    server: localhost
+
